@@ -9,8 +9,11 @@ Build a Logistic Regression model to predict whether a bank customer will subscr
 - Target: `y`
 - `yes` = subscribed
 - `no` = did not subscribe
+  
+### Approach
+The dataset was preprocessed by encoding categorical features and scaling numerical features. The data was split into training and testing sets, and a *Logistic Regression* model was trained to predict whether a customer would subscribe to a term deposit. The model was evaluated using standard classification metrics.
 
-## Approach
+## Methodology
 1. Loaded `bank-full.csv` using Pandas with `;` as the separator.
 2. Inspected shape, data types, and missing values.
 3. Separated `y` as the target variable.
