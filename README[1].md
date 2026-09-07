@@ -21,28 +21,15 @@ Build a Logistic Regression model to predict whether a bank customer will subscr
 8. Trained a Logistic Regression classifier with `class_weight="balanced"` because the target classes are imbalanced.
 9. Evaluated the model using Accuracy, Precision, Recall, F1-score, ROC-AUC, and a confusion matrix.
 
-## Results
 
-| Metric | Score |
-|---|---:|
-| Accuracy | 84.57% |
-| Precision | 41.82% |
-| Recall | 81.47% |
-| F1 Score | 55.27% |
-| ROC-AUC | 90.79% |
-
-### Confusion Matrix
-```
-[[6786 1199]
- [ 196  862]]
-```
 
 ## Findings
-The model achieved an accuracy of approximately 84.57%. The ROC-AUC of approximately 90.79% indicates strong discrimination between subscribers and non-subscribers.
+The accuracy of the model was roughly 84.57%. Strong discrimination between subscribers and non-subscribers is indicated by the ROC-AUC of roughly 90.79%.
 
-Recall was approximately 81.47%, meaning the model identified a large proportion of actual subscribers. Precision was lower (41.82%), so some customers predicted as subscribers would not actually subscribe.
+With a recall of almost 81.47%, the model was able to identify a significant percentage of real subscribers. Due to the decreased precision (41.82%), some clients who were anticipated to subscribe would not do so.
 
-Because the dataset is imbalanced, accuracy alone is not sufficient; recall, F1-score, and ROC-AUC are also important.
+Accuracy alone is insufficient because to the imbalanced dataset; recall, F1-score, and ROC-AUC are all crucial. 
+
 
 ## Limitations and Future Improvements
 - Tune the classification threshold based on the bank's business objective.
@@ -51,8 +38,4 @@ Because the dataset is imbalanced, accuracy alone is not sufficient; recall, F1-
 - Consider excluding `duration` for a true pre-contact prediction scenario because call duration is only known after a customer contact.
 - Explore feature importance and model interpretability.
 
-## How to Run
-```bash
-pip install -r requirements.txt
-python logistic_regression.py
-```
+
